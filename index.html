@@ -1,0 +1,308 @@
+<html>
+<head>
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+   <!-- ----------------  Header CSS ------------------->
+   <style>
+   #header {
+    
+    display:block;
+    position:relative;
+    
+    margin-top:-50px;
+    
+    margin-bottom:20px;
+    height:20px;
+	
+}
+ </style>
+ 
+ 
+<style>
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	z-index:1000;
+	}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 110px;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ffffff}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+  
+}
+.dropup:hover .dropdown-content{
+display:block;
+bottom:100%;
+}
+</style>
+<!------for footer dropup menu ----------------->
+
+
+
+<!-- ------------------------ Image slider CSS --------------------------->
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none
+margin-top:100px;
+text-align:center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
+
+
+  <!-----------------------  body start    -------------------------->
+  
+<body bgcolor="grey">
+
+
+<table bgcolor="black" width="100%" height="8%" class="ui-responsive">
+<tr>
+<div data-role="header" data-position="fixed" data-fullscreen="true">
+<div id="header">
+<td align="left"><h3><font color="white"></font></h1></td>
+<td align="center"><a style="text-decoration:none" href="#" class="ui-btn" data-transition="slide">Home</button>
+<td align="center"><div class="dropdown"><a style="text-decoration:none"class="ui-btn" data-transition="slide" href="#">Comics</button>
+<div class="dropdown-content">
+<a href="haider.html">Comic 1</a>
+<a href="khiladi.html">Comic 2</a>
+</div></div></td>
+
+<td align="center"><div class="dropdown"><a style="text-decoration:none" class="ui-btn" data-transition="slide" href="novels.html">Novels</button>
+<!--<div class="dropdown-content">
+<a href="test1.php">Test 1</a>
+<a href="test2.php">test 2</a>
+</div>--></div></td>
+
+<!--<td align="center"><a  style="text-decoration:none" class="ui-btn" data-transition="slide" href="contact.html">Contact</button></td>-->
+<td align="center"><a  style="text-decoration:none" href="about.html" class="ui-btn" data-transition="slide">About Us</button></td>
+<td align="center"><a style="text-decoration:none" href="#" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left" data-rel="back"></a></td>
+</div>
+</tr>
+
+</table>
+<table>
+<tr><td><br></td></tr>
+<tr><td align="center">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="20%" color="black"><h4>Empowering children to literacy and numeracy through mobile learning</h1></font></td></tr>
+
+</table>
+
+
+
+
+<!--
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>   -->
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <!--<div class="numbertext">1 / 3</div>-->
+  
+  <img src="slider images/slider1.jpg" height="600" width="1100">
+  <div class="dot"<div class="text">image 1</div>
+</div>
+
+<div class="mySlides fade">
+  <!--<div class="numbertext">2 / 3</div>-->
+  <img src="slider images/happy.jpg" height="600" width="1100">
+  <div class="text">image 2</div>
+</div>
+
+<div class="mySlides fade">
+  <!--<div class="numbertext">3 / 3</div>-->
+  <img src="slider images/slider3.jpg" height="600" width="1100">
+  <div class="text">image 3</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+ var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+<br><br>
+
+<table bgcolor="pink" width="100%" height="8%" >
+<tr>
+<td align="center">
+<p><h2>Our App features a cinematic <br>reading experience that contains some<br> of the best comic books and novels from India.</h2></p>
+<font size="20%" color="black">DOWNLOAD NOW</font></td></tr>
+
+<tr>
+<td align ="center">
+<a href="https://play.google.com/store/apps/details?id=com.cf.cfx.commicapp&hl=en"><img src="slider images/playstore.png" height="70" width="100" align="center"></a>
+ <a href="https://itunes.apple.com/us/app/cfxcomics/id1004607093?mt=8"><img src="slider images/applestore.png" height="70" width="100" align="center"></a>
+</td>
+</tr>
+<tr><td><br></td></tr>
+
+ </table>
+ 
+<table align="center"> 
+<tr>
+<td>
+<br>
+<font color="black" size="30%"><h2>Awesome comics available on our app</font></h2>
+</td></tr>
+<tr><td><br></td></tr>
+<tr>
+
+<td colspan="50px" cellpadding="50px" cellspacing="60px" align="center"><br>
+<img src="slider images/paaspan.jpeg" height="250" width="250" >
+<img src="slider images/haider.jpg" height="250" width="250" >
+<img src="slider images/khiladi1.jpg" height="250" width="250" >
+<img src="slider images/paaspan2.jpeg" height="250" width="250" >
+ </td></tr>
+ <tr><td><br><br><br><br><br></td></tr>
+ </table>
+ 
+ <table bgcolor="black" width="100%" height="8%" >
+<tr>
+<div data-role="footer" data-position="fixed" data-fullscreen="true">
+<div id="header">
+<td align="left"><h3><font color="white"></font></h1></td>
+
+<td align="center"><a style="text-decoration:none" href="#" class="ui-btn" data-transition="slide">Home</button>
+<td align="center"><div class="dropup"><div class="dropdown"><a style="text-decoration:none" href="novels.html" class="ui-btn" data-transition="slide">Comics</button>
+<div class="dropdown-content">
+<a href="haider.html">Comic 1</a>
+<a href="khiladi.html">Comic 2</a>
+</div></div></div></td>
+
+<td align="center"><div class="dropup"><div class="dropdown"><a style="text-decoration:none" href="novels.html" class="ui-btn" data-transition="slide">Novels</button>
+<div class="dropdown-content">
+<!--<a href="test1.php">Test 1</a>
+<a href="test2.php">test 2</a>-->
+</div></div></div></td>
+
+<td align="center"><a style="text-decoration:none" href="about.html" class="ui-btn" data-transition="slide">About Us</button></td>
+<td align="center"><a style="text-decoration:none" href="contact.html" class="ui-btn" data-transition="slide">Contact</button></td>
+</div></div>
+</tr>
+
+</table>
+</body>
+</html>
+
